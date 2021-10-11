@@ -1,0 +1,27 @@
+- name: Introduction
+  href: intro.md
+- name: Data model
+  items:
+    - name: Accounts
+      href: data-model/account.md
+    - name: Notes
+      href: data-model/annotation.md
+    - name: Bookings
+      href: data-model/bookableresourcebooking.md
+    - name: Connections
+      href: data-model/connection.md
+    - name: Contacts
+      href: data-model/contact.md
+- name: DocFX templates
+  href: docfx-templates/index.md
+  items:
+    - name: Base
+      href: docfx-templates/base.md
+    - name: Web
+      href: docfx-templates/web.md
+    - name: Web (dark)
+      href: docfx-templates/web-dark.md
+    - name: GDS
+      href: docfx-templates/gds.md
+    - name: GDS (dark)
+      href: docfx-templates/gds-dark.md
