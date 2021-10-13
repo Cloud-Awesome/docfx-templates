@@ -54,7 +54,7 @@
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "template": [
-      "templates/docfx.default"
+      "templates/cloud-awesome.docfx.base"
     ],
     "postProcessors": [],
     "markdownEngineName": "markdig",

@@ -1,0 +1,44 @@
+<h1 id="{{ htmlId }}" data-uid="{{ uid }}" class="text-capitalize text-break">{{ name }}</h1>
+
+{% if summary %}
+    <div class="markdown level0 summary">{{ summary }}</div>
+{% endif %}
+
+{% if description %}
+    <div class="markdown level0 description">{{ description }}</div>
+{% endif %}
+
+{% if conceptual %}
+    <div class="markdown level0 conceptual">{{ conceptual }}</div>
+{% endif %}
+
+{% for tag in tags %}
+    <h2 id="{{ tag.htmlId }}">{{ tag.name }}</h2>
+    
+    {% if tag.description %}
+        <div class="markdown level0 description">{{ tag.description }}</div>
+    {% endif %}
+    
+    {% if tag.conceptual %}
+        <div class="markdown level0 conceptual">{{ tag.conceptual }}</div>
+    {% endif %}
+    
+    {% for c in tag.children %}
+        {% include partials/rest-api/rest-child %}
+    {% endfor %}
+    
+{% endfor %}
+
+{% if children %}
+    {% if isTagLayout %}
+        <h2 id="other-apis">Other APIs</h2>
+    {% endif %}    
+{% endif %}
+
+{% for c in children %}
+    {% include partials/rest-api/rest-child %}
+{% endfor %}
+
+{% if footer %}
+    <div class="markdown level0 api-footer">{{ footer }}</div>
+{% endif %}

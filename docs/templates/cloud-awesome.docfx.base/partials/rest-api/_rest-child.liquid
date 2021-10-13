@@ -1,0 +1,98 @@
+{% if c.docurl %}
+    <span class="small pull-right mobile-hide">
+      <span class="divider">|</span>
+      <a href="{{ c.docurl }}">Improve this Doc</a>
+    </span>
+{% endif %}
+
+{% if c.sourceurl %}
+    <span class="small pull-right mobile-hide">
+      <a href="{{ c.sourceurl }}">View Source</a>
+    </span>
+{% endif %}
+
+<h3 id="{{ c.htmlId }}" data-uid="{{ c.uid }}" class="text-capitalize">{{ c.operationId }}</h3>
+
+{% if c.summary %}
+    <div class="markdown level1 summary">{{ c.summary }}</div>
+{% endif %}
+
+{% if c.description %}
+    <div class="markdown level1 description">{{ c.description }}</div>
+{% endif %}
+
+{% if c.conceptual %}
+    <div class="markdown level1 conceptual">{{ c.conceptual }}</div>
+{% endif %}
+
+<h5>Request</h5>
+<div class="codewrapper">
+    <pre><code class="lang-restApi hljs">{{ c.operation }} {{ c.path }}</code></pre>
+</div>
+
+{% if c.parameters.size > 0 %}
+    <h5>Parameters</h5>
+    <table class="table table-bordered table-striped table-condensed">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Value</th>
+            <th>Notes</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        {% for param in c.parameters %}
+            <tr>
+                <td>
+                    <span class="parametername">
+                        {% if param.required %}*{% endif %}{{ param.name }}
+                    </span>
+                </td>
+                <td>{{ param.type }}</td>
+                <td>{{ param.default }}</td>
+                <td>{{ param.description }}</td>
+            </tr>
+        {% endfor %}
+        
+        </tbody>
+    </table>
+{% endif %}
+
+{% if c.responses.size > 0 %}
+    <div class="responses">
+        <h5>Responses</h5>
+        <table class="table table-bordered table-striped table-condensed">
+            <thead>
+            <tr>
+                <th>Status Code</th>
+                <th>Description</th>
+                <th>Samples</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            {% for response in c.responses %}
+                <tr>
+                    <td><span class="status">{{ response.statusCode }}</span></td>
+                    <td>{{ response.description }}</td>
+                    <td class="sample-response">
+                        {% for example in response.examples %}
+                            <div class="mime-type">
+                                <i>Mime type: </i><span class="mime">{{ example.mimeType }}</span>
+                            </div>
+                            <pre class="response-content"><code class="lang-js json hljs">{{ example.content }}</code></pre>
+                        {% endfor %}
+                    </td>
+                </tr>
+            {% endfor %}
+            
+            </tbody>
+        </table>
+    </div>
+{% endif %}
+
+{% if c.footer %}
+    <div class="markdown level1 api-footer">{{ c.footer }}</div>
+{% endif %}

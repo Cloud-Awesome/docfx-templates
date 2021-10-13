@@ -11,6 +11,7 @@
         <AssemblyName>SampleDocApi</AssemblyName>
         <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
+        <LangVersion>9</LangVersion>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
         <PlatformTarget>AnyCPU</PlatformTarget>
@@ -39,9 +40,14 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="ITestClass.cs" />
+        <Compile Include="EnumTest.cs" />
+        <Compile Include="IDrives.cs" />
+        <Compile Include="IRuns.cs" />
+        <Compile Include="IInterfaceTest.cs" />
         <Compile Include="Models\Contact.cs" />
-        <Compile Include="TestClass.cs" />
+        <Compile Include="RecordTest.cs" />
+        <Compile Include="StructTest.cs" />
+        <Compile Include="ClassTest.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -4,7 +4,6 @@ var classCategory = 'class';
 var namespaceCategory = 'ns';
 
 exports.transform = function (model) {
-
   if (!model) return null;
 
   langs = model.langs;
@@ -192,7 +191,7 @@ function handleItem(vm, gitContribute, gitUrlPattern) {
   vm.docurl = common.getImproveTheDocHref(vm, gitContribute, gitUrlPattern);
   vm.sourceurl = common.getViewSourceHref(vm, null, gitUrlPattern);
 
-  // set to null incase mustache looks up
+  // set to null in case mustache looks up
   vm.summary = vm.summary || null;
   vm.remarks = vm.remarks || null;
   vm.conceptual = vm.conceptual || null;

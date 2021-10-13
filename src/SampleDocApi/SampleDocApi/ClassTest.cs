@@ -6,7 +6,7 @@ namespace SampleDocApi
     /// Here is a text class, to start off generation of some docs!
     /// </summary>
     /// <remarks>You can include all sorts of **markdown documentation** here</remarks>
-    public class TestClass: ITestClass
+    public class ClassTest: IInterfaceTest, IRuns, IDrives
     {
         /// <summary>
         /// This is a constructor for this TestClass. Use it to initiate an instance of this class!
@@ -20,7 +20,7 @@ namespace SampleDocApi
         /// var testClass = new TestClass("a string", new DateTime(), EnumTest.D);
         /// </code>
         /// </example>
-        public TestClass(string testString, DateTime testDateTime, EnumTest testEnum)
+        public ClassTest(string testString, DateTime testDateTime, EnumTest testEnum)
         {
             TestString = testString;
             TestDateTime = testDateTime;
@@ -45,9 +45,14 @@ namespace SampleDocApi
         public EnumTest TestEnum { get; set; }
 
         /// <summary>
-        /// Something inherited from <see cref="ITestClass"/>
+        /// Something inherited from <see cref="IInterfaceTest"/>
         /// </summary>
         public string ParentString { get; set; }
+
+        /// <summary>
+        /// A random tuple value type
+        /// </summary>
+        public (double Sum, int Count) TestTuple;
 
         /// <summary>
         /// Here's a public method consuming some private properties
@@ -66,7 +71,7 @@ namespace SampleDocApi
         }
         
         /// <summary>
-        /// Something else inherited from <see cref="ITestClass"/> interface
+        /// Something else inherited from <see cref="IInterfaceTest"/> interface
         /// </summary>
         /// <param name="firstInt">An int input</param>
         /// <param name="secondInt">Another int input</param>
@@ -76,41 +81,5 @@ namespace SampleDocApi
         {
             throw new NotImplementedException();
         }
-    }
-
-    /// <summary>
-    /// Here is a test enum to start be consumed in the <see cref="TestClass"/>
-    /// </summary>
-    /// <remarks>**Avoid usage of this enum.** It likely will be deprecated as of v4.0</remarks>
-    public enum EnumTest
-    {
-        /// <summary>
-        /// First Letter of the alphabet
-        /// </summary>
-        A = 1, 
-        /// <summary>
-        /// Second Letter of the alphabet
-        /// </summary>
-        B, 
-        /// <summary>
-        /// Third Letter of the alphabet
-        /// </summary>
-        C, 
-        /// <summary>
-        /// Fourth Letter of the alphabet
-        /// </summary>
-        D, 
-        /// <summary>
-        /// Fifth Letter of the alphabet
-        /// </summary>
-        E, 
-        /// <summary>
-        /// Sixth Letter of the alphabet
-        /// </summary>
-        F, 
-        /// <summary>
-        /// Seventh Letter of the alphabet!
-        /// </summary>
-        G
     }
 }

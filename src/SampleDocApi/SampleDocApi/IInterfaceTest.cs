@@ -3,7 +3,7 @@
     /// <summary>
     /// Here is an example of a basic interface
     /// </summary>
-    public interface ITestClass
+    public interface IInterfaceTest
     {
         /// <summary>
         /// Here is a string that must be implemented in inheriting classes

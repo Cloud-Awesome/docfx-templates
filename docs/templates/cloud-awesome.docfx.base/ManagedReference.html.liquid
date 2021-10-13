@@ -1,0 +1,11 @@
+{% master "layout/_master.liquid" %}
+
+{% if isNamespace %}
+    {% include partials/managed-reference/namespace %}
+{% endif %}
+{% if isClass %}
+    {% include partials/managed-reference/class %}
+{% endif %}
+{% if isEnum %}
+    {% include partials/managed-reference/enum %}
+{% endif %}

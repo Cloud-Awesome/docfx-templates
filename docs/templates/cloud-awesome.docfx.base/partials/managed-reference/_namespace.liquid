@@ -1,0 +1,16 @@
+<h1 id="{{ id }}" data-id="{{ uid }}" class="text-break">{% include partials/title %}</h1>
+
+<div class="markdown level0 summary">{{ summary }}</div>
+<div class="markdown level0 conceptual">{{ conceptual }}</div>
+<div class="markdown level0 remarks">{{ remarks }}</div>
+
+{% for child in children %}
+    {% assign c = child  %}
+
+    <h3 id="{{id}}">{% include partials/managed-reference/namespace-subtitle %}</h3>
+    
+    {% for g in c.children %}
+        <h4><xref uid="{{g.uid}}" altProperty="fullName" displayProperty="name"/></h4>
+        <section>{{ g.summary }}</section>
+    {% endfor %}
+{% endfor %}

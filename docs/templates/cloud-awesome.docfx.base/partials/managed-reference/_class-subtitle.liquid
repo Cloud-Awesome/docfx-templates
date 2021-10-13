@@ -1,0 +1,27 @@
+{% if c.inConstructor %}
+    {{ __global.constructorsInSubtitle }}
+{% endif %}
+{% if c.inField %}
+    {{ __global.fieldsInSubtitle }}
+{% endif %}
+{% if c.inProperty %}
+    {{ __global.propertiesInSubtitle }}
+{% endif %}
+{% if c.inMethod %}
+    {{ __global.methodsInSubtitle }}
+{% endif %}
+{% if c.inEvent %}
+    {{ __global.eventsInSubtitle }}
+{% endif %}
+{% if c.inOperator %}
+    {{ __global.operatorsInSubtitle }}
+{% endif %}
+{% if c.inEii %}
+    {{ __global.eiisInSubtitle }}
+{% endif %}
+{% if c.inFunction %}
+    {{ __global.functionsInSubtitle }}
+{% endif %}
+{% if c.inMember %}
+    {{ __global.membersInSubtitle }}
+{% endif %}

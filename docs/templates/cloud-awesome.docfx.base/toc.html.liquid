@@ -1,0 +1,20 @@
+<div id="sidetoggle">
+    <div>
+        {% if _disableSideFilter != true %}
+            <div class="sidefilter">
+                <form class="toc-filter">
+                    <span class="glyphicon glyphicon-filter filter-icon"></span>
+                    <span class="glyphicon glyphicon-remove clear-icon" id="toc_filter_clear"></span>
+                    <input type="text" id="toc_filter_input" placeholder="{{__global.tocFilter}}" onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+            </div>
+        {% endif %}
+        <div class="sidetoc">
+            <div class="toc" id="toc">
+                {% if leaf != true %}
+                    {% include partials/li with level:level, items:items %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
