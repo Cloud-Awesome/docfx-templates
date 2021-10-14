@@ -1,5 +1,19 @@
 {% master "layout/_master.liquid" %}
 
-{{  rawTitle }}
+{% if subject %}
+    <div>{{ subject }}</div>
+{% endif %}    
+
+<h1>{{  rawTitle }}</h1>
+
+{% if leadParagraph %}
+    <div>
+        {{ leadParagraph }}
+    </div>
+{% endif %}
 
 {{ conceptual }}
+
+{% include partials/see-also %}
+
+{% include partials/scripts/mermaid-diagrams %}
