@@ -19,15 +19,18 @@
       {
         "files": [
           "api/**.yml",
-          "api/index.md"
+          "api/index.md",
+          "**.yml"
         ]
       },
       {
         "files": [
           "articles/**.md",
+          "articles/**.yml",
           "articles/**/toc.yml",
           "toc.yml",
           "*.md",
+          "*.yml",
           "restapi/**"
         ]
       }
@@ -35,7 +38,12 @@
     "resource": [
       {
         "files": [
-          "images/**"
+          "templates/cloud-awesome.docfx.liquid-base/images/**"
+        ]
+      },
+      {
+        "files": [
+          "templates/cloud-awesome.docfx.liquid-base/styles/**"
         ]
       }
     ],
@@ -54,7 +62,7 @@
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "template": [
-      "templates/cloud-awesome.docfx.base"
+      "templates/cloud-awesome.docfx.liquid-base"
     ],
     "postProcessors": [],
     "markdownEngineName": "markdig",
@@ -68,22 +76,40 @@
       {
         "files": [
           "api/**.yml",
-          "api/index.md"
+          "api/index.md",
+          "**.yml"
         ]
       },
       {
         "files": [
           "articles/**.md",
+          "articles/**.yml",
           "articles/**/toc.yml",
           "toc.yml",
+          "*.md",
+          "*.yml",
+          "restapi/**"
+        ]
+      },
+      {
+        "files": [
+          "articles/**.md",
           "*.md"
         ]
+      },
+      {
+        "files": "pdf/toc.yml"
       }
     ],
     "resource": [
       {
         "files": [
           "images/**"
+        ]
+      },
+      {
+        "files": [
+          "templates/cloud-awesome.docfx.liquid-base.pdf/styles/**"
         ]
       }
     ],
@@ -94,18 +120,18 @@
         ],
         "exclude": [
           "obj/**",
-          "_site_pdf/**"
+          "_pdf/**"
         ]
       }
     ],
     "wkhtmltopdf": {
       "additionalArguments": "--enable-local-file-access"
     },
-    "dest": "_site_pdf",
+    "dest": "_pdf",
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "template": [
-      "templates/docfx.pdf.default"
+      "templates/cloud-awesome.docfx.liquid-base.pdf"
     ],
     "postProcessors": [],
     "markdownEngineName": "markdig",

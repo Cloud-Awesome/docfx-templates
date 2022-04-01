@@ -1,0 +1,49 @@
+{% include partials/managed-reference/class-header %}
+
+{% for child in children %}
+    {% assign c = child  %}
+
+    <h3 id="{{ c.id }}">{% include partials/managed-reference/class-subtitle %}</h3>
+
+    <table class="table table-bordered table-striped table-condensed">
+        <thead>
+            <tr>
+                <th>{{__global.name}}</th>
+                <th>{{__global.description}}</th>
+            </tr>
+        <thead>
+        <tbody>
+
+        {% for g in c.children %}
+            <tr>
+                <td id="{{ g.id }}">{{ g.name[0].value }}</td>
+                <td>{{ g.summary }}</td>
+            </tr>
+        {% endfor %}    
+        
+        </tbody>
+    </table>
+
+{% endfor %}
+
+{% if seealso %}
+    <h5 id="{{ seealso.id }}_seealso">{{__global.seealso}}</h5>
+    <div class="seealso">
+        {% for s in seealso %}
+            {% if s.isCref %}
+                <div>{{ s.type.specName[0].value }}</div>
+            {% else %}
+                <div>{{ s.url }}</div>
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endif %}
+
+{% if extensionMethods.size > 0 %}
+    <h3 id="extensionmethods">{{ __global.extensionMethods }}</h3>
+    {% for method in extensionMethods %}
+        <div>
+            <xref uid="{{ method.uid }}" altProperty="fullName" displayProperty="nameWithType"/>
+        </div>
+    {% endfor %}
+{% endif %}

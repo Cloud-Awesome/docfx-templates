@@ -1,0 +1,48 @@
+{% if inPackage %}
+    Package {{ name[0].value }}
+{% endif %}
+{% if inNamespace %}
+    Namespace {{ name[0].value }}
+{% endif %}
+{% if inClass %}
+    Class {{ name[0].value }}
+{% endif %}
+{% if inStruct %}
+    Struct {{ name[0].value }}
+{% endif %}
+{% if inInterface %}
+    Interface {{ name[0].value }}
+{% endif %}
+{% if inEnum %}
+    Enum {{ name[0].value }}
+{% endif %}
+{% if inDelegate %}
+    Delegate {{ name[0].value }}
+{% endif %}
+{% if inConstructor %}
+    Constructor {{ name[0].value }}
+{% endif %}
+{% if inField %}
+    Field {{ name[0].value }}
+{% endif %}
+{% if inProperty %}
+    Property {{ name[0].value }}
+{% endif %}
+{% if inMethod %}
+    Method {{ name[0].value }}
+{% endif %}
+{% if inEvent %}
+    Event {{ name[0].value }}
+{% endif %}
+{% if inOperator %}
+    Operator {{ name[0].value }}
+{% endif %}
+{% if inEii %}
+    Explict Interface Implementation {{ name[0].value }}
+{% endif %}
+{% if inVariable %}
+    Variable {{ name[0].value }}
+{% endif %}
+{% if inTypeAlias %}
+    Type Alias {{ name[0].value }}
+{% endif %}

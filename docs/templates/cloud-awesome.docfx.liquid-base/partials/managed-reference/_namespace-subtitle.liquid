@@ -1,0 +1,30 @@
+{% if c.isNamespace == false %}
+    {% if c.inNamespace %}
+        {{__global.namespacesInSubtitle}}
+    {% endif %}
+{% endif %}
+
+{% if c.inClass %}
+    {{ __global.classesInSubtitle }}
+{% endif %}
+{% if c.inStruct %}
+    {{__global.structsInSubtitle}}
+{% endif %}
+{% if c.inInterface %}
+    {{__global.interfacesInSubtitle}}
+{% endif %}
+{% if c.inEnum %}
+    {{__global.enumsInSubtitle}}
+{% endif %}
+{% if c.inDelegate %}
+    {{__global.delegatesInSubtitle}}
+{% endif %}
+{% if c.inFunction %}
+{{__global.functionsInSubtitle}}
+{% endif %}
+{% if c.inVariable %}
+    {{__global.variablesInSubtitle}}
+{% endif %}
+{% if c.inTypeAlias %}
+    {{__global.typeAliasesInSubtitle}}
+{% endif %}

@@ -1,0 +1,32 @@
+﻿{% master "layout/_master.liquid" %}
+
+{% if subject %}
+    <div>{{ subject }}</div>
+{% endif %}
+
+<h1>{{ title }}</h1>
+
+{% if description %}
+    <div>
+        {{ description }}
+    </div>
+{% endif %}
+
+<p>
+    {{ paragraph }}
+</p>
+
+<table>
+    <tr>
+        <th>Decision</th>
+        <th>Status</th>
+        <th>Owner</th>
+    </tr>
+    {% for decision in decisions %}
+        <tr>
+            <td><a href="{{ decision.href }}">{{ decision.title }}</a></td>
+            <td>{{ decision.status }}</td>
+            <td>{{ decision.owner }}</td>
+        </tr>
+    {% endfor %}
+</table>

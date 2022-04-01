@@ -25,3 +25,7 @@
       href: docfx-templates/gds.md
     - name: GDS (dark)
       href: docfx-templates/gds-dark.md
+- name: Landing page example
+  href: landing-page.yml
+- name: Decisions
+  href: decisions-list.yml

@@ -1,0 +1,55 @@
+﻿{% master "layout/_master.liquid" %}
+
+{% if subject %}
+    <div>{{ subject }}</div>
+{% endif %}
+
+<h1>{{ title }}</h1>
+
+{% if description %}
+    <div>
+        {{ description }}
+    </div>
+{% endif %}
+
+<p>
+    {{ paragraph }}
+</p>
+
+{% for section in sections %}
+    <div class="row">
+        {% for child in section.children %}
+            {% if child.href %}
+                <div class="col-sm-6" style="padding-bottom: 1.5rem">
+                    <div class="card" style="height: 100%; ">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="{{ child.href }}" class="govuk-link">{{ child.text }}</a>
+                            </h5>
+                            <p class="card-text">{{ child.content }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endfor %}
+
+{% for section in sections %}
+    <h2 class="govuk-heading-m">{{ section.title }}</h2>
+    
+    <ul class="govuk-list govuk-list--bullet">
+        {% for child in section.children %}
+            {% if child.href %}
+                <li>
+                    <a class="govuk-link" href="{{ child.href }}">{{ child.text }}</a>
+                </li>    
+            {% else %}
+                <li>
+                    {{ child.content }}
+                </li>
+            {% endif %}
+            
+        {% endfor %}
+    </ul>
+{% endfor %}

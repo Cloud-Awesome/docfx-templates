@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    {% include partials/head %}
+    <body data-spy="scroll" data-target="#affix" data-offset="120">
+        <div id="wrapper">
+            <div role="main" class="container body-content hide-when-search">
+                <div class="article row grid-right">
+                    <div class="row grid">
+                        <div class="col-md-12">
+                            <div class="col-md-10">
+                                <article class="content wrap" id="_content" data-uid="{{uid}}">
+                                    {% body %}
+                                </article>
+                            </div>
+                            {% include partials/affix %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% include partials/scripts %}
+    </body>
+</html>

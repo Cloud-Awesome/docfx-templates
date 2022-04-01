@@ -1,0 +1,31 @@
+{% assign level = 1 %}
+{% assign items = 2 %}
+
+<ul class="nav level{{ level }}">
+    {% for item in items %}
+        {% if item.dropdown %}
+            {% for d in item.dropdown %}
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{ d.name }} <span class="caret"></span></a>
+                    <ul class="dropdown-menu level{{ d.level }}">
+                        {% include partials/dd-li %}
+                    </ul>
+                </li>
+            {% endfor %}
+        {% else %}
+            <li>
+                {% if item.leaf != true %}
+                    <span class="expand-stub"></span>
+                {% endif %}    
+                {% if item.topicHref %}
+                    <a href="{{ item.topicHref }}" name="{{ item.tocHref }}" title="{{ item.name }}">{{ item.name }}</a>
+                {% else  %}
+                    <a>{{ item.name }}</a>
+                {% endif %}
+                {% if item.leaf != true %}
+                    {% include partials/li with level:item.level, items:item.items %}
+                {% endif %}
+            </li>    
+        {% endif %}
+    {% endfor %}
+</ul>

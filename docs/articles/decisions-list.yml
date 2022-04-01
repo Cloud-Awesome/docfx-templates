@@ -1,0 +1,45 @@
+﻿### YamlMime:DecisionsList
+
+title: A YAML-generated decisions list
+subject: Decisions
+description: These decisions have been made...
+paragraph: |
+  Click on each one for more details. 
+  
+  The links currently take a relative URL, instead of an xref - I think I probably prefer the latter 
+  
+uid: decisions
+metadata:
+  title: Azure Web Apps Documentation - Tutorials, API Reference
+  meta.description: Learn how to use App Service Web Apps to build and host websites and web applications.
+  services: app-service
+decisions:
+  - title: 1. This is a decision
+    href: intro.md
+    status: Approved
+    owner: Arthur
+  - title: 2. This is a decision
+    href: data-model/connection.md
+    status: "**Needs approval**"
+    owner: Dawid
+  - title: 3. This is a decision
+    href: intro.md
+    status: Approved
+    owner: Arthur
+  - title: 4. This is a decision
+    href: intro.md
+    status: Approved
+    owner: Mike
+  - title: 5. This is a decision
+    href: intro.md
+    status: "~~Rejected~~"
+    owner: Laura
+  - title: 6. This is a decision
+    href: intro.md
+    status: Approved
+    owner: Dawid
+  - title: 7. This is a decision
+    href: intro.md
+    status: Approved
+    owner: Arthur
+  

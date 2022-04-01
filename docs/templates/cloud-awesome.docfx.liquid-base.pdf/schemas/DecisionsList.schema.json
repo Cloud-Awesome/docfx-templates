@@ -1,0 +1,50 @@
+﻿{
+  "$schema": "https://dotnet.github.io/docfx/schemas/v1.0/schema.json#",
+  "version": "1.0.0",
+  "id": "https://github.com/dotnet/docfx/schemas/decisionslist.schema.json",
+  "title": "DecisionsList",
+  "description": "The schema for decisions list page",
+  "type": "object",
+  "xrefProperties": [ "title", "description" ],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "tags": [ "metadata" ]
+    },
+    "paragraph": {
+      "type": "string",
+      "contentType": "markdown"
+    },
+    "uid": {
+      "type": "string",
+      "contentType": "uid"
+    },
+    "decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "mergeType": "key"
+          },
+          "href": {
+            "type": "string",
+            "contentType": "href"
+          },
+          "status": {
+            "type": "string",
+            "contentType": "markdown"
+          },
+          "owner": {
+            "type": "string",
+            "contentType": "markdown"
+          }
+        }
+      }
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}
