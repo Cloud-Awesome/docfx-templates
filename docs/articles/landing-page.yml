@@ -1,9 +1,10 @@
 ﻿### YamlMime:LandingPage
 
-title: A YAML-generated landing page!!
+rawTitle: A YAML-generated landing page!!
 subject: Articles
 description: Azure Web Apps Documentation - Tutorials, API Reference
-paragraph: Learn how to use [App Service Web Apps](https://google.co.uk?q=Azure+App+Service) to build and host websites and web applications.
+leadParagraph: |
+  Learn how to use [App Service Web Apps](https://google.co.uk?q=Azure+App+Service) to build and host websites and web applications.
 uid: webapp
 metadata:
   title: Azure Web Apps Documentation - Tutorials, API Reference

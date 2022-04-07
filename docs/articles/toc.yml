@@ -29,3 +29,7 @@
   href: landing-page.yml
 - name: Decisions
   href: decisions-list.yml
+- name: Personas
+  href: personas/index.md
+- name: docfx properties
+  href: test-properties.md

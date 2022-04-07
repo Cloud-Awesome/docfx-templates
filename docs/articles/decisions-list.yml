@@ -1,13 +1,13 @@
 ﻿### YamlMime:DecisionsList
 
-title: A YAML-generated decisions list
+rawTitle: A YAML-generated decisions list
 subject: Decisions
-description: These decisions have been made...
-paragraph: |
-  Click on each one for more details. 
+leadParagraph: |
+  These decisions were made... Click on each one for more details.  
+content: |
+  The links currently take a relative URL, instead of an xref - I think I probably prefer the latter
   
-  The links currently take a relative URL, instead of an xref - I think I probably prefer the latter 
-  
+  This is some more content for the main body of the page... 
 uid: decisions
 metadata:
   title: Azure Web Apps Documentation - Tutorials, API Reference
@@ -42,4 +42,6 @@ decisions:
     href: intro.md
     status: Approved
     owner: Arthur
+authors:
+  - name: Peter
   

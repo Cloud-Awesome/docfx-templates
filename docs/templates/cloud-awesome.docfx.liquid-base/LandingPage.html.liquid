@@ -1,20 +1,6 @@
 ﻿{% master "layout/_master.liquid" %}
 
-{% if subject %}
-    <div>{{ subject }}</div>
-{% endif %}
-
-<h1>{{ title }}</h1>
-
-{% if description %}
-    <div>
-        {{ description }}
-    </div>
-{% endif %}
-
-<p>
-    {{ paragraph }}
-</p>
+{{ content }}
 
 {% for section in sections %}
     <div class="row">

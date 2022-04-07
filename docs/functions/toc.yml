@@ -1,0 +1,13 @@
+### YamlMime:TableOfContent
+- uid: SampleFunctionsApp.HttpTriggers
+  name: SampleFunctionsApp.HttpTriggers
+  items:
+  - uid: SampleFunctionsApp.HttpTriggers.HelloWorld
+    name: HelloWorld
+  - uid: SampleFunctionsApp.HttpTriggers.Version
+    name: Version
+- uid: SampleFunctionsApp.ServiceBusTriggers
+  name: SampleFunctionsApp.ServiceBusTriggers
+  items:
+  - uid: SampleFunctionsApp.ServiceBusTriggers.ProcessServiceBusMessage
+    name: ProcessServiceBusMessage

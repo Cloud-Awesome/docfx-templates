@@ -6,3 +6,6 @@
 - name: REST API
   href: restapi/
   homepage: restapi/index.md
+- name: Functions
+  href: functions
+  homepage: functions/index.md

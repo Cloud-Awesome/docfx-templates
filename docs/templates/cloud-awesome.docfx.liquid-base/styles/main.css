@@ -1,0 +1,35 @@
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+table {
+    margin-top: 15px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+blockquote {
+    margin-top: 5px;
+}
+
+.lead-paragraph {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.persona-summary {
+    margin-bottom: 20px;
+}
+
+.persona-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

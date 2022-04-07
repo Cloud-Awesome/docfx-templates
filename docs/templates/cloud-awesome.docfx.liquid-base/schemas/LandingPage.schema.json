@@ -2,7 +2,7 @@
   "$schema": "https://dotnet.github.io/docfx/schemas/v1.0/schema.json#",
   "version": "1.0.0",
   "id": "https://github.com/dotnet/docfx/schemas/landingpage.schema.json",
-  "title": "LandingPage",
+  "rawTitle": "LandingPage",
   "description": "The schema for landing page",
   "type": "object",
   "xrefProperties": [ "title", "description" ],
@@ -11,7 +11,11 @@
       "type": "object",
       "tags": [ "metadata" ]
     },
-    "paragraph": {
+    "leadParagraph": {
+      "type": "string",
+      "contentType": "markdown"
+    },
+    "content": {
       "type": "string",
       "contentType": "markdown"
     },

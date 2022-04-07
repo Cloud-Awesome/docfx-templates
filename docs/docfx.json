@@ -5,11 +5,24 @@
         {
           "src": "../",
           "files": [
-            "src/**.csproj"
+            "src/SampleDocApi/**.csproj"
           ]
         }
       ],
       "dest": "api",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false
+    },
+    {
+      "src": [
+        {
+          "src": "../",
+          "files": [
+            "src/SampleFunctionsApp/**.csproj"
+          ]
+        }
+      ],
+      "dest": "functions",
       "disableGitFeatures": false,
       "disableDefaultFilter": false
     }
@@ -25,17 +38,24 @@
       },
       {
         "files": [
-          "articles/**.md",
-          "articles/**.yml",
-          "articles/**/toc.yml",
           "toc.yml",
           "*.md",
           "*.yml",
+          "articles/**.md",
+          "articles/**.yml",
+          "articles/**/toc.yml",
+          "functions/**",
           "restapi/**"
         ]
       }
     ],
     "resource": [
+      {
+        "files": [
+          "images/**",
+          "contributors.json"
+        ]
+      },
       {
         "files": [
           "templates/cloud-awesome.docfx.liquid-base/images/**"
@@ -59,7 +79,7 @@
       }
     ],
     "dest": "_site",
-    "globalMetadataFiles": [],
+    "globalMetadataFiles": [ "contributors.json" ],
     "fileMetadataFiles": [],
     "template": [
       "templates/cloud-awesome.docfx.liquid-base"

@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: SampleFunctionsApp.HttpTriggers
+  commentId: N:SampleFunctionsApp.HttpTriggers
+  id: SampleFunctionsApp.HttpTriggers
+  children:
+  - SampleFunctionsApp.HttpTriggers.HelloWorld
+  - SampleFunctionsApp.HttpTriggers.Version
+  langs:
+  - csharp
+  - vb
+  name: SampleFunctionsApp.HttpTriggers
+  nameWithType: SampleFunctionsApp.HttpTriggers
+  fullName: SampleFunctionsApp.HttpTriggers
+  type: Namespace
+  assemblies:
+  - SampleFunctionsApp
+references:
+- uid: SampleFunctionsApp.HttpTriggers.HelloWorld
+  commentId: T:SampleFunctionsApp.HttpTriggers.HelloWorld
+  name: HelloWorld
+  nameWithType: HelloWorld
+  fullName: SampleFunctionsApp.HttpTriggers.HelloWorld
+- uid: SampleFunctionsApp.HttpTriggers.Version
+  commentId: T:SampleFunctionsApp.HttpTriggers.Version
+  name: Version
+  nameWithType: Version
+  fullName: SampleFunctionsApp.HttpTriggers.Version

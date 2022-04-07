@@ -1,0 +1,10 @@
+{
+  "SampleFunctionsApp.HttpTriggers": "SampleFunctionsApp.HttpTriggers.yml",
+  "SampleFunctionsApp.HttpTriggers.HelloWorld": "SampleFunctionsApp.HttpTriggers.HelloWorld.yml",
+  "SampleFunctionsApp.HttpTriggers.HelloWorld.RunAsync(Microsoft.AspNetCore.Http.HttpRequest,Microsoft.Extensions.Logging.ILogger)": "SampleFunctionsApp.HttpTriggers.HelloWorld.yml",
+  "SampleFunctionsApp.HttpTriggers.Version": "SampleFunctionsApp.HttpTriggers.Version.yml",
+  "SampleFunctionsApp.HttpTriggers.Version.RunAsync(Microsoft.AspNetCore.Http.HttpRequest,Microsoft.Extensions.Logging.ILogger)": "SampleFunctionsApp.HttpTriggers.Version.yml",
+  "SampleFunctionsApp.ServiceBusTriggers": "SampleFunctionsApp.ServiceBusTriggers.yml",
+  "SampleFunctionsApp.ServiceBusTriggers.ProcessServiceBusMessage": "SampleFunctionsApp.ServiceBusTriggers.ProcessServiceBusMessage.yml",
+  "SampleFunctionsApp.ServiceBusTriggers.ProcessServiceBusMessage.RunAsync(System.String,Microsoft.Extensions.Logging.ILogger)": "SampleFunctionsApp.ServiceBusTriggers.ProcessServiceBusMessage.yml"
+}

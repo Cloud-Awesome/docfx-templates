@@ -5,6 +5,10 @@ leadParagraph: |
 refSeeAlso:
     - name: See this
       uid: SampleDocApi.ClassTest
+authors:
+    - name: Peter
+    - name: Arthur
+    - name: Dawid # Intentionally won't be included...
 ---
 
 # Hand-written documentation

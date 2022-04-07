@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: SampleFunctionsApp.ServiceBusTriggers
+  commentId: N:SampleFunctionsApp.ServiceBusTriggers
+  id: SampleFunctionsApp.ServiceBusTriggers
+  children:
+  - SampleFunctionsApp.ServiceBusTriggers.ProcessServiceBusMessage
+  langs:
+  - csharp
+  - vb
+  name: SampleFunctionsApp.ServiceBusTriggers
+  nameWithType: SampleFunctionsApp.ServiceBusTriggers
+  fullName: SampleFunctionsApp.ServiceBusTriggers
+  type: Namespace
+  assemblies:
+  - SampleFunctionsApp
+references:
+- uid: SampleFunctionsApp.ServiceBusTriggers.ProcessServiceBusMessage
+  commentId: T:SampleFunctionsApp.ServiceBusTriggers.ProcessServiceBusMessage
+  name: ProcessServiceBusMessage
+  nameWithType: ProcessServiceBusMessage
+  fullName: SampleFunctionsApp.ServiceBusTriggers.ProcessServiceBusMessage

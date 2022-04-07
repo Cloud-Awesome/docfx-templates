@@ -1,0 +1,54 @@
+{% master "layout/_master.liquid" %}
+<br/>
+<br/># System-generated properties
+<br/>
+<br/>## _rel
+<br/>
+<br/>The relative path of the root output folder from current output file. For example, if the output file is a/b/c.html from root output folder, then the value is ../../.
+<br/>
+<br/>Example: {{ _rel }}
+<br/>
+<br/>## _path
+<br/>
+<br/>The path of current output file starting from root output folder.
+<br/>
+<br/>Example: {{ _path }}
+<br/>
+<br/>## _navPath
+<br/>
+<br/>The relative path of the root TOC file from root output folder, if exists. The root TOC file stands for the TOC file in root output folder. For example, if the output file is html file, the value is toc.html.
+<br/>
+<br/>Example: {{ _navPath }}
+<br/>
+<br/>## _navRel
+<br/>
+<br/>The relative path from current output file to the root TOC file, if exists. For example, if the root TOC file is toc.html from root output folder, the value is empty.
+<br/>
+<br/>Example: {{ _navRel }}
+<br/>
+<br/>## _navKey
+<br/>
+<br/>The original file path of the root TOC file starting with ~/. ~/ stands for the folder where docfx.json is in, for example, ~/toc.md.
+<br/>
+<br/>Example: {{ _navKey }}
+<br/>
+<br/>## _tocPath
+<br/>
+<br/>The relative path of the TOC file that current output file belongs to from root output folder, if current output file is in that TOC file. If current output file is not defined in any TOC file, the nearest TOC file is picked.
+<br/>
+<br/>Example: {{ _tocPath }}
+<br/>
+<br/>## _tocRel
+<br/>
+<br/>The relative path from current output file to its TOC file. For example, if the TOC file is a/toc.html from root output folder, the value is ../.
+<br/>
+<br/>Example: {{ _tocRel }}
+<br/>
+<br/>## _tocKey
+<br/>
+<br/>The original file path of the TOC file starting with ~/. ~/ stands for the folder where docfx.json is in, for example, ~/a/toc.yml.
+<br/>
+<br/>Example: {{ _tocKey }}
+<br/>
+
+
