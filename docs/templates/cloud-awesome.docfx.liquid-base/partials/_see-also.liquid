@@ -1,15 +1,16 @@
 {% if refSeeAlso.size > 0 %}
-    <hr/>
-    <h2>{{ __global.seeAlso }}</h2>
-    <div>
-        <ul class="cross-ref-list">
-            {% for seeAlso in refSeeAlso %}
-                <li>
-                    <xref uid="{{ seeAlso.uid }}" altProperty="{{ seeAlso.name }}" displayProperty="{{ seeAlso.name }}" >
-                        {{ seeAlso.name }}
-                    </xref>
-                </li>
-            {% endfor %}
-        </ul>
+    <div class="see-also-container">
+        <h2>{{ __global.seeAlso }}</h2>
+        <div>
+            <ul class="cross-ref-list">
+                {% for seeAlso in refSeeAlso %}
+                    <li>
+                        <xref uid="{{ seeAlso.uid }}" altProperty="{{ seeAlso.name }}" displayProperty="{{ seeAlso.name }}" >
+                            {{ seeAlso.name }}
+                        </xref>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
     </div>
 {% endif %}

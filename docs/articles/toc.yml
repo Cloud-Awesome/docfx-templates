@@ -30,6 +30,6 @@
 - name: Decisions
   href: decisions-list.yml
 - name: Personas
-  href: personas/index.md
-- name: docfx properties
-  href: test-properties.md
+  href: personas/index.yml
+- name: Definition of done
+  href: runbooks-and-checklists/definition-of-done.yml

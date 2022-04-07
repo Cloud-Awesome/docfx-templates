@@ -1,5 +1,6 @@
 ---
 documentType: persona
+subject: Personas
 image: "../../images/Filip_Persona.png"
 quote: "I am worried that this thingy isn't going to be ready in time for me and my family to do this thingy or the other thingy neither"
 headlines:

@@ -1,0 +1,16 @@
+{% master "layout/_master.liquid" %}
+
+{{ content }}
+
+{% for section in sections %}
+    <h2 class="checklist-section-title">{{ section.title }}</h2>
+    {% for child in section.items %}
+        <h3>{{ child.title }}</h3>
+        {{ child.content }}
+        <ul>
+            {% for grandchild in child.items %}
+                <li>{{ grandchild.content }}</li>
+            {%  endfor %}
+        </ul>
+    {% endfor %}
+{% endfor %}

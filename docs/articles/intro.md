@@ -8,7 +8,7 @@ refSeeAlso:
 authors:
     - name: Peter
     - name: Arthur
-    - name: Dawid # Intentionally won't be included...
+    - name: Dawid # Not listed in metadata, so will not be a clickable link
 ---
 
 # Hand-written documentation

@@ -1,0 +1,75 @@
+﻿{
+  "$schema": "https://dotnet.github.io/docfx/schemas/v1.0/schema.json#",
+  "version": "1.0.0",
+  "id": "https://github.com/dotnet/docfx/schemas/personalist.schema.json",
+  "rawTitle": "PersonaList",
+  "description": "The schema for persona list page",
+  "type": "object",
+  "xrefProperties": [ "title", "description" ],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "tags": [ "metadata" ]
+    },
+    "leadParagraph": {
+      "type": "string",
+      "contentType": "markdown"
+    },
+    "content": {
+      "type": "string",
+      "contentType": "markdown"
+    },
+    "uid": {
+      "type": "string",
+      "contentType": "uid"
+    },
+    "sections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "mergeType": "key"
+          },
+          "items": {
+            "type": "array",
+            "properties": {
+              "title": {
+                "type": "string",
+                "mergeType": "key"
+              },
+              "content": {
+                "type": "string",
+                "contentType": "markdown"
+              },
+              "items": {
+                "type": "array",
+                "properties": {
+                  "content": {
+                    "type": "string",
+                    "contentType": "markdown"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "authors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

@@ -1,7 +1,8 @@
 ---
 documentType: persona
+subject: Personas
 image: "../../images/Saoirse_Persona.png"
-quote: "These days, too much of the thingies related to the thingy, are not frequent enough, nor of high enough quality, to get thingy enough thingies."
+quote: "These days, too many of the thingies related to the thingy, are not frequent enough, nor of high enough quality, to get thingy enough thingies."
 headlines:
     - title: Age
       value: 26 years old
@@ -9,6 +10,8 @@ headlines:
       value: Microbiologist
     - title: Lives
       value: Falkirk, UK
+authors:
+    - name: Sharon
 ---
 
 # Saoirse

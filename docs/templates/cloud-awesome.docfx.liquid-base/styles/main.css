@@ -16,12 +16,20 @@ h1 {
 }
 
 blockquote {
-    margin-top: 5px;
+    margin-top: 15px;
 }
 
 .lead-paragraph {
     font-size: 20px;
     margin-bottom: 20px;
+}
+
+.see-also-container {
+    margin-top: 30px;
+}
+
+.persona-list {
+    margin-top: 20px;
 }
 
 .persona-summary {
@@ -32,4 +40,20 @@ blockquote {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.contributor-list {
+    color: darkgrey;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    text-align: left;
+}
+
+.checklist-section-title{
+    border-bottom: 1px solid lightgrey;
 }

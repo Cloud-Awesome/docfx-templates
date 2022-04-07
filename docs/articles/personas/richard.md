@@ -1,5 +1,6 @@
 ---
 documentType: persona
+subject: Personas
 image: "../../images/Richard_Persona.png"
 quote: "This is a quote from Richard, it should be borne in mind when making some awesome software. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus."
 headlines:
