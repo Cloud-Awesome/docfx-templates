@@ -1,5 +1,5 @@
 ---
-subject: Articles Subject
+subject: Articles
 leadParagraph: |
     <p>This is an <strong>important</strong> paragraph, introducing the topic on this page. Keep it short and sweet.</p>
 refSeeAlso:
@@ -22,6 +22,12 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor con
 Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
 
 > [!IMPORTANT]
+> Be careful with this one!
+
+> [!WARNING]
+> Be careful with this one!
+
+> [!TIP]
 > Be careful with this one!
 
 Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.

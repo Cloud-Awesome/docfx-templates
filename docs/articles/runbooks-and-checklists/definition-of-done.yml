@@ -27,4 +27,6 @@ sections:
       - title: 1. All bugs raised are closed
         items:
           - content: Any bugs remaining open are accepted by the PO as technical debt and can remain in the backlog
-          
+      - title: 2. Functionality approved by tester
+      - title: 3. Release notes generated and published
+      - title: 4. Deployed to UAT...
