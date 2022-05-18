@@ -31,5 +31,12 @@
   href: decisions-list.yml
 - name: Personas
   href: personas/index.yml
+  items:
+    - name: Richard
+      href: personas/richard.md
+    - name: Filip
+      href: personas/filip.md
+    - name: Saoirse
+      href: personas/saoirse.md
 - name: Definition of done
   href: runbooks-and-checklists/definition-of-done.yml
