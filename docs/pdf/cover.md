@@ -2,7 +2,7 @@
 documentType: cover
 ---
 
-# Articles
+# Everything
 
 Author: Arthur Nicholson-Gumuła
 

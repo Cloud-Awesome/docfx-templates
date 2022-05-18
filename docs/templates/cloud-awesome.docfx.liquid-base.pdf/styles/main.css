@@ -1,8 +1,68 @@
 body {
     font-family: 'Segoe UI', Tahoma, Helvetica, sans-serif;
+    font-size: 18px;
 }
 
 .subject-header {
-    font-size: 16px;
+    font-size: 18px;
     color: darkgray;
+}
+
+table {
+    margin-top: 15px;
+}
+
+h1 {
+    margin-bottom: 22px;
+}
+
+blockquote {
+    margin-top: 15px;
+    font-size: 22px;
+    line-height: 1.25;
+}
+
+.lead-paragraph {
+    font-size: 22px;
+    line-height: 1.25;
+    margin-bottom: 20px;
+}
+
+.see-also-container {
+    margin-top: 30px;
+}
+
+.persona-list {
+    margin-top: 20px;
+}
+
+.persona-summary {
+    margin-bottom: 20px;
+}
+
+.persona-image {
+    /* 
+      Annoyingly, WkHtmlToPdf doesn't support grid system etc. 
+      Float's the only thing that works... =O 
+    */
+    float: right;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contributor-list {
+    color: darkgrey;
+}
+
+.card-body {
+    text-align: left;
+}
+
+.card-title {
+    text-align: left;
+}
+
+.checklist-section-title{
+    border-bottom: 1px solid lightgrey;
 }

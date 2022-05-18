@@ -53,7 +53,8 @@
       {
         "files": [
           "images/**",
-          "contributors.json"
+          "contributors.json",
+          "downloads/**"
         ]
       },
       {
@@ -113,8 +114,7 @@
       },
       {
         "files": [
-          "articles/**.md",
-          "*.md"
+          "functions/**"
         ]
       },
       {
@@ -124,7 +124,8 @@
     "resource": [
       {
         "files": [
-          "images/**"
+          "images/**",
+          "contributors.json"
         ]
       },
       {
@@ -148,7 +149,7 @@
       "additionalArguments": "--enable-local-file-access"
     },
     "dest": "_pdf",
-    "globalMetadataFiles": [],
+    "globalMetadataFiles": [ "contributors.json" ],
     "fileMetadataFiles": [],
     "template": [
       "templates/cloud-awesome.docfx.liquid-base.pdf"

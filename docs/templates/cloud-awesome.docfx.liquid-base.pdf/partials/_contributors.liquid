@@ -1,0 +1,20 @@
+{% if authors.size > 0 %}
+    <hr/>
+    <div class="contributor-list">
+        <span class="contributor-title">{{ __global.contributors }}:&nbsp;</span> 
+        {% for author in authors %}
+            {% capture contributor_markup %}
+                {% if Contributors[author.name] %}
+                    <a href="{{ Contributors[author.name] }}">{{ author.name -}}</a>
+                {% else %}
+                    {{ author.name }}
+                {% endif %}
+            {% endcapture %}
+            {% if forloop.last %}
+                {{ contributor_markup | strip }}
+            {% else  %}
+                {{ contributor_markup | strip }},
+            {% endif %}
+        {% endfor %}
+    </div>
+{%  endif %}

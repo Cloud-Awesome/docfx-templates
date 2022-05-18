@@ -3,13 +3,29 @@
     {% include partials/head %}
     <body data-spy="scroll" data-target="#affix" data-offset="120">
         <div id="wrapper">
+            <header></header>
             <div role="main" class="container body-content hide-when-search">
                 <div class="article row grid-right">
                     <div class="row grid">
                         <div class="col-md-12">
                             <div class="col-md-10">
                                 <article class="content wrap" id="_content" data-uid="{{uid}}">
+                                    {% if subject %}
+                                        <div class="subject-header">{{ subject }}</div>
+                                    {% endif %}
+        
+                                    <h1>{{  rawTitle }}</h1>
+        
+                                    {% if leadParagraph %}
+                                        <div class="lead-paragraph">
+                                            {{ leadParagraph }}
+                                        </div>
+                                    {% endif %}
+        
                                     {% body %}
+        
+                                    {% include partials/see-also %}
+                                    {% include partials/contributors %}
                                 </article>
                             </div>
                             {% include partials/affix %}
@@ -19,5 +35,6 @@
             </div>
         </div>
         {% include partials/scripts %}
+        {% include partials/scripts/mermaid-diagrams %}
     </body>
 </html>

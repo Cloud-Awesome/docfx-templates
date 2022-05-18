@@ -1,0 +1,12 @@
+{% master "layout/_master.liquid" %}
+
+{{ content }}
+
+{% for persona in personas %}
+    <div class="persona-list" >
+        <a href="{{ persona.href }}"><img src="{{ persona.image }}" alt="{{ persona.name }}_image"></a>
+        <h2 style="float: right; margin-right: 50%; vertical-align: center;">
+            <a href="{{ persona.href }}">{{ persona.name }}</a>
+        </h2>
+    </div>
+{% endfor %}

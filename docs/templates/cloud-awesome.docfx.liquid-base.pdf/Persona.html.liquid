@@ -1,0 +1,13 @@
+{% master "layout/_master.liquid" %}
+
+<div class="persona-summary" >
+    <img src="{{ image }}" alt="persona image" class="persona-image" >
+    {% for headline in headlines %}
+        <p><strong>{{ headline.title }}:</strong> {{ headline.value }}</p>
+    {% endfor %}
+    <blockquote>{{ quote }}</blockquote>
+</div>
+
+{{ conceptual }}
+
+

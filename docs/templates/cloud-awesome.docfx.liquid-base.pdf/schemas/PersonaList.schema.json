@@ -1,9 +1,9 @@
 ﻿{
   "$schema": "https://dotnet.github.io/docfx/schemas/v1.0/schema.json#",
   "version": "1.0.0",
-  "id": "https://github.com/dotnet/docfx/schemas/decisionslist.schema.json",
-  "rawTitle": "DecisionsList",
-  "description": "The schema for decisions list page",
+  "id": "https://github.com/dotnet/docfx/schemas/personalist.schema.json",
+  "rawTitle": "PersonaList",
+  "description": "The schema for persona list page",
   "type": "object",
   "xrefProperties": [ "title", "description" ],
   "properties": {
@@ -23,12 +23,12 @@
       "type": "string",
       "contentType": "uid"
     },
-    "decisions": {
+    "personas": {
       "type": "array",
       "items": {
         "type": "object",
         "properties": {
-          "title": {
+          "name": {
             "type": "string",
             "mergeType": "key"
           },
@@ -36,13 +36,8 @@
             "type": "string",
             "contentType": "href"
           },
-          "status": {
-            "type": "string",
-            "contentType": "markdown"
-          },
-          "owner": {
-            "type": "string",
-            "contentType": "markdown"
+          "image": {
+            "type": "string"
           }
         }
       }

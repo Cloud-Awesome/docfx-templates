@@ -1,20 +1,6 @@
 ﻿{% master "layout/_master.liquid" %}
 
-{% if subject %}
-    <div>{{ subject }}</div>
-{% endif %}
-
-<h1>{{ title }}</h1>
-
-{% if description %}
-    <div>
-        {{ description }}
-    </div>
-{% endif %}
-
-<p>
-    {{ paragraph }}
-</p>
+{{ content }}
 
 {% for section in sections %}
     <div class="row">
@@ -37,19 +23,19 @@
 
 {% for section in sections %}
     <h2 class="govuk-heading-m">{{ section.title }}</h2>
-    
+
     <ul class="govuk-list govuk-list--bullet">
         {% for child in section.children %}
             {% if child.href %}
                 <li>
                     <a class="govuk-link" href="{{ child.href }}">{{ child.text }}</a>
-                </li>    
+                </li>
             {% else %}
                 <li>
                     {{ child.content }}
                 </li>
             {% endif %}
-            
+
         {% endfor %}
     </ul>
 {% endfor %}
