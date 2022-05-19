@@ -9,14 +9,25 @@
             </header>
             {% include partials/searchResults %}
             <div role="main" class="container body-content hide-when-search">
-                {% include partials/toc %}
+                {% if hideToc == true %}
+                    {% comment %} Do nothing, but include the 'else' to avoid the bull scenario {% endcomment %}
+                    {% comment %} 
+                        TODO: This only hides it, it doesn't float left/collapse it... That would probably be a nicer solution? 
+                    {% endcomment %}
+                {% else %}
+                    {% include partials/toc %}
+                {% endif %}
                 <div class="article row grid-right">
                     <div class="row grid">
                         <div class="col-md-12">
                             <div class="col-md-10">
                                 <article class="content wrap" id="_content" data-uid="{{uid}}">
                                     {% if subject %}
-                                        <div>{{ subject }}</div>
+                                        {% if subject == "%%override%%" %}
+                                            <div>{{ Settings["override_subject"] }}</div>
+                                        {% else %}    
+                                            <div>{{ subject }}</div>
+                                        {% endif %}
                                     {% endif %}
 
                                     <h1>{{  rawTitle }}</h1>

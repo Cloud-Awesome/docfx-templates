@@ -80,7 +80,7 @@
       }
     ],
     "dest": "_site",
-    "globalMetadataFiles": [ "contributors.json" ],
+    "globalMetadataFiles": [ "contributors.json", "environment_settings_liquid_base" ],
     "fileMetadataFiles": [],
     "template": [
       "templates/cloud-awesome.docfx.liquid-base"

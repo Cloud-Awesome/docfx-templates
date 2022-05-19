@@ -1,20 +1,20 @@
 ---
 documentType: persona
 subject: Personas
-image: "../../images/Filip_Persona.png"
-quote: "I am worried that this thingy isn't going to be ready in time for me and my family to do this thingy or the other thingy neither"
+image: "../../../images/Richard_Persona.png"
+quote: "This is a quote from Richard, it should be borne in mind when making some awesome software. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus."
 headlines:
     - title: Age
-      value: 39 years old
+      value: 25 years old
     - title: Occupation
-      value: Developer
+      value: Student
     - title: Lives
-      value: Zielona Góra, Poland 
+      value: Greater Manchester, UK 
     - title: Sources
-      value: Twitter
+      value: Google, Facebook, GOV.UK
 ---
 
-# Filip
+# Richard
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
 

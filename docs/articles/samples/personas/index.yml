@@ -7,10 +7,10 @@ uid: personas-list
 personas:
   - name: Richard
     href: richard.md
-    image: "../../images/Richard_Persona.png"
+    image: "../../../images/Richard_Persona.png"
   - name: Filip
     href: filip.md
-    image: "../../images/Filip_Persona.png"
+    image: "../../../images/Filip_Persona.png"
   - name: Saoirse
     href: saoirse.md
-    image: "../../images/Saoirse_Persona.png"
+    image: "../../../images/Saoirse_Persona.png"

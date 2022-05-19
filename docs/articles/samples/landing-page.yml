@@ -15,24 +15,24 @@ sections:
     children:
       - text: .NET
         content: Learn some .NET stuff here
-        href: intro.md
+        href: ../intro.md
       - text: Node.js
         content: Go all modern and learn Node. It's like Javascript but better.
-        href: intro.md
+        href: ../intro.md
       - text: PHP
         content: Learn PHP here. Yes, OK, it's old but it works :)
-        href: intro.md
+        href: ../intro.md
       - text: Java
         content: Learn some Java and go old school
-        href: intro.md
+        href: ../intro.md
       - text: Python
         content: Quick tips on Python. If you really have to.
-        href: intro.md
+        href: ../intro.md
       - text: HTML
         content: Study good old HTML. You know you love it!
-        href: intro.md
+        href: ../intro.md
   - title: Step-by-Step Tutorials
     children:
-      - content: "Create an application using [.NET with Azure SQL DB](intro.md) or [Node.js with MongoDB](intro.md)"
-      - content: "[Map an existing custom domain to your application](intro.md)"
-      - content: "[Bind an existing SSL certificate to your application](intro.md)"
+      - content: "Create an application using [.NET with Azure SQL DB](../intro.md) or [Node.js with MongoDB](../intro.md)"
+      - content: "[Map an existing custom domain to your application](../intro.md)"
+      - content: "[Bind an existing SSL certificate to your application](../intro.md)"

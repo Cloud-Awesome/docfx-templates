@@ -15,7 +15,7 @@ metadata:
   services: app-service
 decisions:
   - title: 1. This is a decision
-    href: intro.md
+    href: ../intro.md
     status: Approved
     owner: Arthur
   - title: 2. This is a decision
@@ -23,23 +23,23 @@ decisions:
     status: "**Needs approval**"
     owner: Dawid
   - title: 3. This is a decision
-    href: intro.md
+    href: ../intro.md
     status: Approved
     owner: Arthur
   - title: 4. This is a decision
-    href: intro.md
+    href: ../intro.md
     status: Approved
     owner: Mike
   - title: 5. This is a decision
-    href: intro.md
+    href: ../intro.md
     status: "~~Rejected~~"
     owner: Laura
   - title: 6. This is a decision
-    href: intro.md
+    href: ../intro.md
     status: Approved
     owner: Dawid
   - title: 7. This is a decision
-    href: intro.md
+    href: ../intro.md
     status: Approved
     owner: Arthur
 authors:
